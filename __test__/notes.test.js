@@ -32,15 +32,15 @@ describe('notes routes', () => {
     const notes = await Promise.all([
       {
         title: 'First Note',
-        Body: 'Brand new baby note'
+        body: 'Brand new baby note'
       },
       {
         title: 'Second Note',
-        Body: 'I am a note'
+        body: 'I am a note'
       },
       {
         title: 'Third Note',
-        Body: 'Being a note is fun'
+        body: 'Being a note is fun'
       }
     ].map(note => Note.insert(note)));
 
